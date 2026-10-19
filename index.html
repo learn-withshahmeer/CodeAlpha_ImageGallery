@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumen - Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Lumen</h1>
+    <p>A small photo gallery</p>
+  </header>
+
+  <div class="filters" id="filters">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="nature">Nature</button>
+    <button class="filter-btn" data-category="urban">Urban</button>
+    <button class="filter-btn" data-category="people">People</button>
+    <button class="filter-btn" data-category="abstract">Abstract</button>
+  </div>
+
+  <div class="gallery" id="gallery"></div>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <span class="nav-btn prev-btn" id="prevBtn">&#8249;</span>
+    <img id="lightboxImg" src="" alt="">
+    <p id="lightboxCaption"></p>
+    <span class="nav-btn next-btn" id="nextBtn">&#8250;</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
